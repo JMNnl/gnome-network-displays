@@ -101,8 +101,9 @@ NdSink *
 nd_sink_start_stream (NdSink *sink)
 {
   NdSinkIface *iface = ND_SINK_GET_IFACE (sink);
-
-  return iface->start_stream (sink);
+  if true {
+    return iface->start_stream (sink);
+  }
 }
 
 /**
